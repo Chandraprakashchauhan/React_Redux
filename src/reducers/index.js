@@ -1,13 +1,10 @@
-import changeTheNumber from "./upown";
-import countCart from "./countCart";
+// import changeTheNumber from "./upown";
 
+import { addToCart, removeFromCart, productList } from "./productRedux";
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-
-    changeTheNumber,
-    countCart
-
+    addToCart, removeFromCart, productList
 })
 
 export default rootReducer;
